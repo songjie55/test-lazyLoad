@@ -3,7 +3,7 @@
     "incremental": true,
     "tsBuildInfoFile": "./buildFile", // 增量编译文件的存储位置
     "target": "ES5",
-    "module": "CommonJS",
+    "module": "esnext",
     "removeComments": true,
     "strict": true,
     "jsx": "preserve",

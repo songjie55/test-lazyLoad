@@ -18,8 +18,8 @@ const router = new VueRouter({
         },
         {
             path: '/page2',
-            component:r => require.ensure([], () => r(require('../page/page2.vue')), 'page2') ,//这种方式懒加载可以
-            // component: () => import(/* webpackChunkName: "page2" */ '../page/page2.vue')//这种方式懒加载不生效
+            // component:r => require.ensure([], () => r(require('../page/page2.vue')), 'page2') ,//这种方式懒加载可以
+            component: () => import(/* webpackChunkName: "page2" */ '../page/page2.vue')//这种方式懒加载不生效
         }
     ]
 });
